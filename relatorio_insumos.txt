@@ -1,0 +1,2 @@
+Nome: adubo a, Tipo: fertilizante, Unidade: saca, Quantidade: 10
+Nome: herbicida b, Tipo: herbicida, Unidade: L, Quantidade: 10

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 16,
+        "nome": "Jeniane Malosti ",
+        "propriedade": "Fazenda Alegria ",
+        "tipo_cultivo": "arroz"
+    },
+    {
+        "id": 17,
+        "nome": "Lucas Xavier ",
+        "propriedade": "Fazenda Felicidade ",
+        "tipo_cultivo": "Milho "
+    },
+    {
+        "id": 18,
+        "nome": "Mayara Goes ",
+        "propriedade": "Fazenda Sossego ",
+        "tipo_cultivo": "P\u00eassego "
+    },
+    {
+        "id": 19,
+        "nome": "Luigi Fortunado",
+        "propriedade": "Fazenda Sucesso ",
+        "tipo_cultivo": "Algod\u00e3o "
+    }
+]

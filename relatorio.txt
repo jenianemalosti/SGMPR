@@ -1,0 +1,8 @@
+Relatório gerado em 2025-04-21 13:50:00.445234
+Total de produtores: 5
+Tipos de cultivo:
+- Café
+- Feijão
+- Soja
+- Arroz
+- Maças
