@@ -1,86 +1,119 @@
-**# Sistema de Gestão e Monitoramento de Produção Rural (SGMPR)#**
+# FIAP - Faculdade de Informática e Administração Paulista
 
-## Descrição
+# Nome do projeto: Sistema de Gestão e Monitoramento de Produção Rural (SGMPR)
 
-O **Sistema de Gestão e Monitoramento de Produção Rural (SGMPR)** foi desenvolvido para atender às necessidades de pequenos produtores rurais. O sistema visa otimizar o processo de gestão, controle e monitoramento de informações relacionadas aos produtores, insumos e produção rural, usando Python, Oracle Database, e exportação/importação de dados para JSON.
+## Nome do grupo
 
-Este projeto foi desenvolvido como parte de uma atividade acadêmica, aplicando conhecimentos sobre estruturas de dados, manipulação de arquivos, integração com banco de dados e construção de sistemas interativos por meio de uma interface de linha de comando (CLI).
+## 👨‍🎓 Integrantes: 
+- <a> Gabriel Luigi Fortunato de Santa - RM563710</a>
+- <a> Jeniane Joice Malosti de Oliveira - RM561936</a>
+- <a> Lucas Xavier - RM563436</a> 
+- <a> Marcus Vinicius de Andrade - RM564544</a> 
+- <a> Mayara Prado Goes - RM564058</a>
 
-## Requisitos
 
-- **Python**: 3.13.2
-- **Oracle Database**: Xe (versão 18c ou superior)
-- **Biblioteca**: `oracledb`
-- **Sistema Operacional**: Windows, Linux ou macOS
+## 👩‍🏫 Professores:
+### Tutor(a) 
+- <a>Lucas Gomes Moreira</a>
+### Coordenador(a)
+- <a> André Godoi Chiovato</a>
 
-## Funcionalidades
 
-- **Cadastro de Produtores**: Permite o cadastro de produtores com informações como nome, propriedade e tipo de cultivo.
-- **Alteração e Exclusão de Produtores**: Permite alterar ou excluir os dados dos produtores.
-- **Listagem de Produtores**: Exibe a lista completa de produtores cadastrados.
-- **Cadastro e Monitoramento de Insumos**: Cadastro de insumos (sementes, fertilizantes, etc.). Monitoramento da quantidade e tipo dos insumos.
-- **Relatório de Insumos**: Geração de relatório com a soma total de insumos por tipo e unidade.
-- **Exportação e Importação de Dados em JSON**: Exportação dos dados dos produtores para um arquivo JSON. Importação de dados de produtores de um arquivo JSON.
-- **Geração de Relatório de Insumos em TXT**: Geração de relatório em formato texto, armazenando as informações sobre insumos.
+## 📜 Descrição
 
-## Instalação
+O Sistema de Gestão e Monitoramento de Produção Rural (SGMPR) foi desenvolvido para atender às necessidades de pequenos produtores rurais. O sistema tem como objetivo otimizar o processo de gestão, controle e monitoramento de informações relacionadas aos produtores, insumos e produção rural.
 
-### 1. Configuração do Ambiente
+Desenvolvido em Python com integração ao Oracle Database, o sistema também realiza exportação e importação de dados em JSON, além de geração de relatórios em formato TXT. A aplicação foi implementada por meio de uma interface de linha de comando (CLI), e faz parte de uma atividade acadêmica focada na aplicação de estruturas de dados, manipulação de arquivos e integração com banco de dados.
 
-#### Passo 1: Instalar Python 3.13.2
-Baixe e instale o Python 3.13.2 em [python.org](https://www.python.org/downloads/release/python-1312/). Certifique-se de adicionar o Python ao PATH durante a instalação.
+Principais Funcionalidades:
+Cadastro, listagem, alteração e exclusão de produtores;
 
-#### Passo 2: Instalar a Biblioteca `oracledb`
-Com o Python instalado, execute o seguinte comando para instalar a biblioteca `oracledb`:
+Cadastro e monitoramento de insumos;
 
-```bash
-pip install oracledb**
-2. Configuração do Oracle Database
-Instale o Oracle Database XE (versão 18c ou superior).
+Geração de relatórios de insumos por tipo e unidade (em TXT);
 
-Configure o banco de dados com as credenciais (usuário system, senha 1234, e service_name xe).
+Exportação e importação de dados em JSON.
 
-3. Banco de Dados
-Acesse o banco de dados e crie as tabelas necessárias (produtores, insumos) usando o SQL fornecido no código.
+Com foco em usabilidade e eficiência, o SGMPR é uma ferramenta prática para auxiliar pequenos produtores no gerenciamento da produção agrícola*
 
-Uso
-1. Execução do Sistema
-Para iniciar o sistema, execute o script Python principal. Isso irá abrir um menu de opções no terminal:
 
-bash
-Copiar código
-python main.py
-No menu interativo, você pode escolher entre várias opções, como cadastrar produtores, listar produtores, gerar relatórios, etc.
+## 📁 Estrutura de pastas
 
-2. Exemplo de Funcionalidade
-Cadastrar Produtor: O sistema solicita os dados do produtor e os armazena no banco de dados.
+Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-Gerar Relatório de Insumos: O sistema calcula e exibe o total de cada tipo de insumo.
+<b>pycache</b>: Diretório gerado automaticamente para armazenar arquivos compilados do Python.
 
-Exportação para JSON: Exporta todos os dados dos produtores para um arquivo produtores.json.
+<b>.gitattributes</b>: Arquivo de configuração do Git.
 
-3. Comandos Básicos
-Voltar ao menu principal: Após cada operação, o sistema perguntará se você deseja voltar ao menu principal ou sair.
+<b>README.md</b>: Guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-Arquivos no Repositório
-main.py: Script principal do sistema.
+<b>db.py</b>: Script responsável pela integração com o banco de dados (conexões e consultas).
 
-produtores.json: Arquivo gerado para exportação de dados dos produtores.
+<b>main.py</b>: Script principal que executa a interface CLI e manipula os dados do sistema.
 
-relatorio_insumos.txt: Arquivo gerado para relatório de insumos.
+<b>produtores.json</b>: Arquivo gerado para exportação de dados dos produtores.
 
-Contribuidores
-GABRIEL LUIGI FORTUNATO DE SANTA – 563710
+<b>relatorio.txt</b>: Relatório de dados gerais (se necessário, exemplo de relatório simples).
 
-JENIANE JOICE MALOSTI DE OLIVEIRA – 561936
+<b>relatorio_insumos.txt</b>: Relatório detalhado sobre os insumos cadastrados.
 
-LUCAS XAVIER – 563436
+<b>relatorios.py</b>: Script para geração dos relatórios em formato de texto (relatório de insumos, por exemplo).
 
-MARCUS VINICIUS DE ANDRADE – 564544
+<h2>🔧 Como executar o código</h2>
 
-MAYARA PRADO GOES – 564058
+<p><strong>Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.</strong></p>
 
-Considerações Finais
-Este sistema foi desenvolvido com foco em usabilidade e eficiência para pequenos produtores rurais, permitindo que as informações sobre a produção e insumos sejam facilmente gerenciadas e acessadas.
+<h3>✅ Pré-requisitos</h3>
+<ul>
+    <li><strong>Python</strong>: 3.13.2 ou superior</li>
+    <li><strong>Oracle Database XE</strong> (versão 18c ou superior)</li>
+    <li><strong>Sistema Operacional</strong>: Windows, Linux ou macOS</li>
+    <li><strong>Biblioteca</strong>: <code>oracledb</code></li>
+</ul>
 
-Com a integração ao banco de dados Oracle e a possibilidade de exportação/importação de dados em JSON, o sistema facilita o armazenamento e a manipulação de informações.
+<h3>🚀 Instalação</h3>
+
+<h4>Fase 1 – Ambiente</h4>
+<ol>
+    <li><strong>Instalar Python</strong><br>
+        <a href="https://www.python.org/downloads/release/python-1312/" target="_blank">Baixe o Python 3.13.2 aqui</a><br>
+        Certifique-se de adicionar o Python ao <strong>PATH</strong> durante a instalação.
+    </li>
+    <li><strong>Instalar a biblioteca <code>oracledb</code></strong><br>
+        Abra o terminal e execute o seguinte comando:
+        <pre><code>pip install oracledb</code></pre>
+    </li>
+</ol>
+
+<h4>Fase 2 – Banco de Dados</h4>
+<ol>
+    <li><strong>Instalar Oracle Database XE (18c+)</strong><br>
+        Após a instalação, configure o banco de dados com as seguintes credenciais:
+        <ul>
+            <li><strong>Usuário</strong>: system</li>
+            <li><strong>Senha</strong>: 1234</li>
+            <li><strong>Service Name</strong>: xe</li>
+        </ul>
+    </li>
+    <li><strong>Criação de Tabelas</strong><br>
+        Acesse o banco de dados e crie as tabelas necessárias (produtores, insumos) utilizando o script SQL que está disponível no repositório.
+    </li>
+</ol>
+
+<h4>Fase 3 – Execução</h4>
+<ol>
+    <li><strong>Rodar o sistema</strong><br>
+        No terminal, execute o seguinte comando para iniciar o sistema:
+        <pre><code>python main.py</code></pre>
+        O sistema abrirá um menu interativo com as opções para cadastrar, listar produtores, gerar relatórios, etc.
+    </li>
+</ol>
+
+<h3>🗃 Histórico de lançamentos</h3>
+<ul>
+ 
+</ul>
+
+<h3>📋 Licença</h3>
+<p>
+</p>
